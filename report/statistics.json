@@ -1,0 +1,50 @@
+{
+  "Send_Kafka_Message" : {
+    "transaction" : "Send_Kafka_Message",
+    "sampleCount" : 12443,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2.880736156875356,
+    "medianResTime" : 3.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 1297.0,
+    "pct1ResTime" : 4.0,
+    "pct2ResTime" : 4.0,
+    "pct3ResTime" : 6.0,
+    "throughput" : 10.215961300365517,
+    "receivedKBytesPerSec" : 1.0784620803352392,
+    "sentKBytesPerSec" : 0.0
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 12444,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2.885245901639349,
+    "medianResTime" : 3.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 1297.0,
+    "pct1ResTime" : 4.0,
+    "pct2ResTime" : 4.0,
+    "pct3ResTime" : 6.0,
+    "throughput" : 10.216262279792916,
+    "receivedKBytesPerSec" : 1.079056593056324,
+    "sentKBytesPerSec" : 0.0
+  },
+  "JSR223 Sampler" : {
+    "transaction" : "JSR223 Sampler",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 59.0,
+    "medianResTime" : 59.0,
+    "minResTime" : 59.0,
+    "maxResTime" : 59.0,
+    "pct1ResTime" : 59.0,
+    "pct2ResTime" : 59.0,
+    "pct3ResTime" : 59.0,
+    "throughput" : 16.949152542372882,
+    "receivedKBytesPerSec" : 13.407044491525424,
+    "sentKBytesPerSec" : 0.0
+  }
+}

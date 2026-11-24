@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: kafka-consumer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/perf_db
+    username: perf_user
+    password: perf_password
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: vtb-perf-consumer-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      concurrency: 4
+
+server:
+  port: 8080
+
+app:
+  db-write-delay-ms: 1000
+
+logging:
+  file:
+    name: logs/kafka-consumer.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} - %msg%n"
+  level:
+    root: WARN
+    kafka_consumer: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
